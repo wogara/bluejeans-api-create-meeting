@@ -12,9 +12,19 @@ Read the file containing your client ID and secret (config.JSON). Make sure this
 # step 2
 Stringify then parse the JSON data, and pass it as a parameter in our client authorization to obtain an access token. 
 
+Method Name: 
+Authentication via Client Grant Type
+
 # step 3
 Read the file containing your meeting details (meeting.json). Make sure this information is in JSON format. Note that the start time is an input parameter and the end time is calculated by adding the start time to the duration. The start time and end time are added to these details in the code before the post request is made. 
 
 # step 4
 Perform step 2 again, but this time with the data from the meeting.json file. 
+
+Method Name: 
+Create Meeting
+
+# More Information
+The link below contains information on all of the methods used in this code
+https://bluejeans.github.io/api-rest-meetings/site/index.html
 
