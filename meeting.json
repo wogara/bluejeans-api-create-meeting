@@ -1,0 +1,11 @@
+    { 
+        "title": "this is a test",
+        "endPointVersion": "2.10",
+        "invitees": [
+          {
+            "email": "example@example.com"
+          }
+        ],
+        "endPointType": "WEB_APP",
+        "timezone": "America/Los_Angeles"
+    }
