@@ -37,14 +37,16 @@ fs.readFile(jssrc + "\\" + fn, (err,data)=> { //reading the file with the client
 
 	  meetingRec = JSON.parse(data.toString());//putting the meeting details into the correct format
 	  meetingRec.start = start;//the start of the meeting is an input 
-	  meetingRec.end = +meetingRec.start + +duration;//calculating the end of the meeting
+	  meetingRec.end = +meetingRec.start + +duration;//calculating the end of the meeting, the "+" in front of each variable
+		  //transforms them from strings to integers so that the end of the meeting can be calculated by adding the start
+		  //and duration together
 
 	  auth.post(uri,meetingPath,meetingRec).then(function(results){
 
-	  	console.log("Meeting ID: " + results.numericMeetingId);
-	  	var startDate = new Date(+meetingRec.start); // The 0 there is the key, which sets the date to the epoch
-        var endDate = new Date(meetingRec.end);
-	  	console.log("Start: " + startDate);
+	    console.log("Meeting ID: " + results.numericMeetingId);
+	    var startDate = new Date(+meetingRec.start); 
+            var endDate = new Date(meetingRec.end);
+	    console.log("Start: " + startDate);
 	    console.log("End: " + endDate);
 
 	  },function(errors){
