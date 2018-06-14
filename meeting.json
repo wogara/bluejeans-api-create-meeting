@@ -1,7 +1,7 @@
     { 
         "title": "this is a test",
         "endPointVersion": "2.10",
-        "invitees": [
+        "attendees": [
           {
             "email": "example@example.com"
           }
