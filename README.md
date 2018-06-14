@@ -13,12 +13,12 @@ An example of how to schedule a BlueJeans meeting using a client ID and secret.
 3) Modify meeting.json so that whomever you'd like to invite is listed in the "email" key. 
 4) In your command prompt, navigate to the folder which has all of these files and type "node createAMeetingWithExternalFiles.js param1 param2 param3" where param1, etc. are listed below. 
 
-
 # Parameters
 1) ID of the user for which the meeting will be scheduled
 2) The start time of the meeting (in Unix time)
 3) The duration of the meeting (in Unix time)
 
+# How the Code Works
 # step 1
 Read the file containing your client ID and secret (config.JSON). Make sure this information is in JSON format.
 
